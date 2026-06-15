@@ -1,0 +1,6 @@
+birthday1=input("Raj: When's your birthday Ben (Enter a date)? ")
+birthday2=input("Raj: When's your birthday John (Enter a date)? ")
+birthday3=input("Raj: When's your birthday Ryan (Enter a date)? ")
+birthday4=input("Raj: When's your birthday Max (Enter a date)? ")
+birthday5=input("Raj: When's your birthday Bob (Enter a date)? ")
+print(f"Here are your birthdays: Ben {birthday1}, John {birthday2}, Ryan {birthday3}, Max {birthday4}, Bob {birthday5}")
