@@ -4,11 +4,8 @@ string=input("Enter a word: ")
 string2=""
 # 3) Loop through each character `i` in `string`:
 for i in string:
-
-# - Add the character `i` in front of `string2`
-
-# - This builds the reversed string step by step.
-
+    string2=i+string2
 # 4) Print the original string (`string`).
-
+print(f"Original word: {string}")
 # 5) Print the reversed string (`string2`)
+print(f"Reversed word: {string2}")
