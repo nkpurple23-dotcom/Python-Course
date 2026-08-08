@@ -18,23 +18,30 @@ while serving:
         print("Invalid amount")
         continue
     while idx<6:
-        hundred=wit/100
+        hundred=wit//100
         wit=wit%100
-        fifty=wit/50
+        fifty=wit//50
         wit=wit%50
-        twenty=wit/20
+        twenty=wit//20
         wit=wit%20
-        ten=wit/10
+        ten=wit//10
         wit=wit%10
-        five=wit/5
+        five=wit//5
         wit=wit%5
-        one=wit/1
+        one=wit//1
         served+=1
         idx=7
     next=input("Is there another customer(yes/no)? ")
     if next=="no":
         serving=False
-
+print(f"""One dollar bills: {one}
+Five dollar bills: {five}
+Ten dollar bills: {ten}
+Twenty dollar bills: {twenty}
+Fifty dollar bills: {fifty}
+Hundred dollar bills: {hundred}
+Total customers served: {served}
+Total money dispensed: {dispensed}""")
 #Step 3: Ask for the customer's name and withdrawal amount; if the amount is invalid, print a message and continue back to the top of the loop.
 
 #Step 4: Inside that same repeat, run an inner while loop that checks each of the six note values one at a time and works out how many of each note to dispense.
