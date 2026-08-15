@@ -12,7 +12,6 @@ new=round(total, 2)
 money=float(input("How much money do you have? "))
 def calculate_change(a,b):
     change=b-a
-    round(change,3)
     return change
 change=calculate_change(total,money)
 def thank_you_message():
