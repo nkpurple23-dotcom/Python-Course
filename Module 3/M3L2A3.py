@@ -1,7 +1,7 @@
-fact=int(input(""))
+fact=int(input("Choose a number: "))
 def factorial (x):
     if x==1 or x==1:
         return 1
     else:
         return x*factorial(x-1)
-factorial (fact)
+print(factorial (fact))
