@@ -4,5 +4,9 @@ student_data={"id1": {"name":"John", "age":12, "gender":"male"},
 "id4": {"name":"Mary", "age":11, "gender":"female"}}
 result={}
 seen_keys=[]
-for key,value in student_data.item():
-    pass
+for key,value in student_data.items():
+    unique_key=(value["name"],value["age"],value["gender"])
+    if unique_key not in seen_keys:
+        seen_keys.append(unique_key)
+        result[key]=value
+print(result)
