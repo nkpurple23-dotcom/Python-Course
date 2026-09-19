@@ -7,3 +7,4 @@ for key,value in student_data.items():
     sum+=value["score"]
 avg=sum/5
 print(max(student_data)
+student_data.get("id1","Not Found")
